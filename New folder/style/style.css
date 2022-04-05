@@ -140,6 +140,7 @@ section aside {
     border: 5px double darkblue;
     padding: 1%;
     background: rgb(98, 145, 255, 0.3);
+    box-shadow: 10px 10px 5px grey;
 }
 
 table,th,td { border: 1px solid black; }
