@@ -230,6 +230,12 @@ ul {
 .secondary-buttons {
     background-color: ;
 }
+
+.main-buttons:hover {
+    font-size: large;
+    box-shadow: 10px 10px 5px grey;
+}
+
 form {
     background-color: #fffffe;/* #fffffe */
 }
