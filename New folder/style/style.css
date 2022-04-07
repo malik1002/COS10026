@@ -27,7 +27,7 @@ header h1{
 #common_header {
     display: block;
     margin-top: 0px;
-    padding-left: 42%;
+    padding-left: 40%;
     background-image: url("ZEN5-A.jpg");
     border-bottom: 1em double white;
     
@@ -52,19 +52,43 @@ nav a {
 #page_header {
     display: block;
     padding-left: 15%;
-    border-bottom: 5px solid #051531;
+
+    position: relative;
+    display:block;
+    animation-name: content;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes content {
+    0% {left:-10000px;}
+    100%{left: 0;}  
 }
 
+#page_nav {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
 a.page_nav {
+    flex: 1;
     background-color: #051531;
-}
+    color: whitesmoke;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+  
+a.page_nav:hover,
+  a.page_nav:focus {
+    background-color: whitesmoke;
+    color: #051531;
+  }
 
-a.page_nav:hover {
-    background-color: #390d76;
-    padding: 10px;
-    border-radius: 10px;
+#divider {
+    border-top: 5px solid #051531;
 }
-
 
 img {
     display:block;
@@ -77,7 +101,6 @@ img {
     margin: 13px;
     box-shadow: 10px 10px 5px grey;
 }
-
 
 
 h2 {
@@ -100,22 +123,11 @@ h2 {
     border: 0.1em inset darkblue;
     border-radius: 5px;
     margin-bottom: 2%;
-
-    position: relative;
-    display:block;
-    left: -100px;
-    -webkit-animation: slide forwards;
-    -webkit-animation-delay: 0.5s;
-    animation: slide 0.5s forwards;
-    animation-delay: .5s;
 }
 
-@-webkit-keyframes slide {
-    100% { left: 0; }
-}
-
-@keyframes slide {
-    100% { left: 0; }
+#first:hover {
+    box-shadow: 10px 10px 5px grey;
+    border: 0.2em inset darkblue;
 }
 
 section {
@@ -144,23 +156,16 @@ ol {
     padding: 1%;
 }
 
+
 #part_2 {
-    position: relative;
     padding:10px;
-    left: -100px;
     background: rgba(3, 66, 166, 0.3);
-    -webkit-animation: slide forwards;
-    -webkit-animation-delay: 0.5s;
-    animation: slide 0.5s forwards;
-    animation-delay: 1s;
+    border-radius: 5px;
 }
 
-@-webkit-keyframes slide {
-    100% { left: 0; }
-}
-
-@keyframes slide {
-    100% { left: 0; }
+#part_2:hover {
+    border: 3px solid darkblue;
+    box-shadow: 10px 10px 5px grey;
 }
 
 section aside {
@@ -169,10 +174,13 @@ section aside {
     clear: both;
     width: 30%;
     border: 5px double darkblue;
+    border-radius: 5px;
     padding: 1%;
     background: rgb(98, 145, 255, 0.3);
     box-shadow: 10px 10px 5px grey;
 }
+
+
 
 table,th,td { border: 1px solid black; }
 
@@ -186,21 +194,89 @@ td {
     padding: 1%;
 }
 
-footer{
-    float:down;
-    clear:both;
-    background-color: #11225d;
-    text-align: center;
-    color: white;
-}
-ul {
-    list-style-type: none;
+footer {
+    background-color: #051531;
 }
 
-ul a {
+/* Drop up */
+.dropup{
+    float:down;
+    float:left;
+    clear:both;
+    display:block;
+}
+
+.button {
+    background-color: #295ba1;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+  }
+
+.dropup {
+    position: relative;
+  }
+
+.mail_links {
+    display: none;
+    position: absolute;
+    bottom:65px;
+    background-color: #89a1d7;
+    min-width: 155px;
+    z-index: 1;
+  }
+  
+.mail_links a {
+    color: black;
+    padding: 10px 14px;
+    display: block;
+  }
+  
+.mail_links a:hover {background-color: rgb(197, 224, 223)}
+  
+.dropup:hover .mail_links {
+    display: block;
+  }
+  
+.dropup:hover .button {
+    background-color: #1f72a9;
+  }
+
+.uni {
+    text-align: center;
+    background-color:#295ba1;
+    display: inline-block;
+    font-size: 15px;
+    padding:15px;
+}
+
+.uni:hover {
+    background-color: #1f72a9;
+}
+
+.uni a {
     color:white;
 }
 
+.home {
+    float:right;
+    text-align: center;
+    background-color: #295ba1;
+    display: block;
+    font-size: 15px;
+    padding:15px;
+}
+
+.home:hover{
+    background-color: #1f72a9;
+}
+.home a {
+    color:white;
+}
+hr {
+    border-top: 2px dashed #051531;
+}
 
 /*quiz page*/
 
@@ -231,15 +307,10 @@ ul a {
     border-radius: 10px;
 
 }
-.secondary-buttons {
-    background-color: ;
-}
-
 .main-buttons:hover {
     font-size: large;
     box-shadow: 10px 10px 5px grey;
 }
-
 form {
     background-color: #fffffe;/* #fffffe */
 }
