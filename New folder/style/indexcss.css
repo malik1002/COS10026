@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    text-align: center;
+    border-bottom:14px double white;
+    padding-bottom: 30px;
+    background-image: url("ZEN5-A.jpg");
+    padding-top: 30px;
+}
+
+#common_header {
+    display: block;
+    margin-top: 0px;
+    background-image: url("ZEN5-A.jpg");
+    border-bottom: 1em double white;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none; 
+    font: 17px Arial, sans-serif;
+    color: white;
+    margin: 1%; 
+    padding: 0.7%;
+    border: 3.5px solid white;
+}
+
+#common_header :hover { 
+    border-color: lightblue;
+    font-size: larger;
+    font-weight: bolder;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(2, 13, 47);
+    color: antiquewhite;
+    line-height: 1.6;
+    text-align: center;
+}
+.container{
+    max-width: 960px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+#showcase {
+    height: 300px;
+    font-size: 60px;
+    line-height: 1.3px;
+    position: relative;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes heading {
+    0% {top: 50px;}
+    100%{top: 150px;}
+}
+#content{
+    position: relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes content {
+    0% {left:-10000px;}
+    100%{left: 0;}   
+}
+.btn{
+    display: inline-block;
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: crimson 1px solid ;
+    margin: 50px;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+.btn:hover{
+    transform: rotateY(180deg);
+}
+@keyframes btn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+footer {
+    background-color: #051531;
+    margin:5px;
+    padding:7px;
+    border-top: 3px dashed lightblue;
+}
+
+/* Drop up */
+.dropup{
+    float:down;
+    float:left;
+    clear:both;
+    display:block;
+}
+
+.button {
+    background-color: #295ba1;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+  }
+
+.dropup {
+    position: relative;
+  }
+
+.mail_links {
+    display: none;
+    position: absolute;
+    bottom:50px;
+    background-color: #89a1d7;
+    min-width: 155px;
+    z-index: 1;
+  }
+  
+.mail_links a {
+    color: black;
+    padding: 10px 14px;
+    display: block;
+  }
+
+.mail_links a:hover {background-color: rgb(197, 224, 223)}
+
+.dropup:hover .mail_links {
+    display: block;
+  }
+  
+.dropup:hover .button {
+    background-color: #1f72a9;
+  }
+
+
+
+.uni {
+    text-align: center;
+    background-color:#295ba1;
+    display: inline-block;
+    font-size: 15px;
+    padding:15px;
+}
+
+.uni:hover {
+    background-color: #1f72a9;
+}
+
+.uni a {
+    color:white;
+}
+
+.home {
+    float:right;
+    text-align: center;
+    background-color: #295ba1;
+    display: block;
+    font-size: 15px;
+    padding:15px;
+}
+
+.home:hover{
+    background-color: #1f72a9;
+}
+.home a {
+    color:white;
+}
