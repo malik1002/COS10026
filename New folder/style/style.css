@@ -96,9 +96,8 @@ h2 {
     width: 95%;
     padding:1%;
     background-color: lightcyan;
-    border-style: inset;
-    border-width: 0.10em;
-    border-color: darkblue;
+    border: 0.1em inset darkblue;
+    border-radius: 5px;
     margin-bottom: 2%;
 
     position: relative;
