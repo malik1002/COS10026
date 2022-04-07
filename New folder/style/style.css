@@ -27,7 +27,6 @@ header h1{
 #common_header {
     display: block;
     margin-top: 0px;
-    padding-left: 40%;
     background-image: url("ZEN5-A.jpg");
     border-bottom: 1em double white;
     
@@ -51,7 +50,7 @@ nav a {
 /*topic page individual header*/
 #page_header {
     display: block;
-    padding-left: 15%;
+    padding-left: 36%;
 
     position: relative;
     display:block;
