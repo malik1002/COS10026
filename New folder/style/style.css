@@ -197,6 +197,10 @@ ul {
     list-style-type: none;
 }
 
+ul a {
+    color:white;
+}
+
 
 /*quiz page*/
 
