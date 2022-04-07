@@ -199,7 +199,6 @@ footer {
 
 /* Drop up */
 .dropup{
-    float:down;
     float:left;
     clear:both;
     display:block;
